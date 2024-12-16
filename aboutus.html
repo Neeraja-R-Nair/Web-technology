@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrayambaka Dance Class</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background: linear-gradient(90deg, #6a0572, #c60257);
+  padding: 1em;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  background: url('dance-background.jpg') no-repeat center/cover;
+  text-align: center;
+  padding: 5em 2em;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  animation: fadeInDown 2s ease;
+}
+
+.hero .cta {
+  margin-top: 1em;
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  background: #ff6347;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero .cta:hover {
+  background: #ff4500;
+}
+
+/* Sections */
+section {
+  padding: 3em 1.5em;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  color: #6a0572;
+}
+
+/* Class Cards */
+.class-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #c60257;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+}
+
+.gallery-item {
+  background: #ddd;
+  height: 200px;
+  border-radius: 10px;
+  animation: fadeIn 1s ease;
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">Thrayambaka Dance Class</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Unleash Your Rhythm with Thrayambaka Dance Class!</h1>
+    <p>Explore the joy of movement and expression.</p>
+    <a href="#classes" class="cta">Join a Class Today!</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Thrayambaka Dance Class, we combine passion, creativity, and tradition to deliver an exceptional dance learning experience.</p>
+  </section>
+
+  <section id="classes">
+    <h2>Our Classes</h2>
+    <div class="class-cards">
+      <div class="card">
+        <h3>Bharatanatyam</h3>
+        <p>A classical Indian dance form emphasizing storytelling through expressions.</p>
+      </div>
+      <div class="card">
+        <h3>Contemporary</h3>
+        <p>Fluid and expressive dance combining modern and ballet elements.</p>
+      </div>
+      <div class="card">
+        <h3>Hip-Hop</h3>
+        <p>High-energy street-style dance with bold moves and grooves.</p>
+      </div>
+      <div class="card">
+        <h3>Salsa</h3>
+        <p>A lively partner dance rooted in Latin American rhythms.</p>
+      </div>
+      <div class="card">
+        <h3>Folk Dance</h3>
+        <p>Vibrant traditional dances celebrating culture and heritage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructors">
+    <h2>Meet Our Instructors</h2>
+    <p>Our team of highly skilled and passionate dance instructors are here to guide you every step of the way!</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Take a glimpse into our vibrant performances and rehearsals.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+      <div class="gallery-item"></div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <blockquote>
+        "Thrayambaka Dance Class has been life-changing for me. The instructors are incredibly supportive and skilled!"
+      </blockquote>
+      <cite>— Aditi R.</cite>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Thrayambaka Dance Class. All rights reserved.</p>
+  </footer>
+</body>
+</html>
